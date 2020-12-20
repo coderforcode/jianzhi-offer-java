@@ -9,7 +9,7 @@ class Solution {
                 sb.append("%20");
             } else {
                 sb.append(chars[i]);
-            }            
+            }
         }
         return sb.toString();
     }
