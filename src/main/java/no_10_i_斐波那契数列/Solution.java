@@ -1,4 +1,4 @@
-package no_10_1_斐波那契数列;
+package no_10_i_斐波那契数列;
 
 /**
  * Created by zhangyue on 2020/12/20 15:20

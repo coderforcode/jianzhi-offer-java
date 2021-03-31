@@ -1,4 +1,4 @@
-package no_14_剪绳子;
+package no_14_i_剪绳子_i;
 
 /**
  * Created by zhangyue on 2020/12/26 20:18
@@ -27,4 +27,16 @@ class Solution {
         }
         return multi;
     }
+
+    // dfs
+    public int cuttingRope_2(int n) {
+        if (n == 2) return 1;
+
+        int res = 0;
+        for (int i = 2; i < n; i++) {
+            res = Math.max(res, Math.max(i * cuttingRope_2(n - i), i * (n - 1)));
+        }
+        return res;
+    }
+
 }
